@@ -4,7 +4,8 @@
     {
         public string? date;
         public string? time;
-        public string? money;
         public string? action;
+        public int money;
+        public int id;
     }
 }
