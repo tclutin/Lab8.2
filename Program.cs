@@ -13,6 +13,7 @@
             ReadFile();
             IsDataCorrect();
             InputData();
+            Console.ReadKey();
         }
 
         public static void IsDataCorrect()
@@ -30,7 +31,7 @@
 
         public static void ReadFile()
         {
-            foreach (var item in File.ReadLines("C:\\Users\\Lutin\\Desktop\\Lab5\\Lab8.2\\extract.txt")) 
+            foreach (var item in File.ReadLines("extract.txt")) 
             {
                 string[] dataFromLine = item.Split("|");
                 ConvertToClass(dataFromLine);
